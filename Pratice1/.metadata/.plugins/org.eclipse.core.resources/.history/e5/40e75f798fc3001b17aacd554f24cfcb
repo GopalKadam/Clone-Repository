@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			<bean id="b" class="com.cjc.Batch"></bean>
+			<property name="bid" value="101"></property>
+			<property name="bname" value="java"></property>
+			</bean>
+			
+			<bean id="s" class="com.cjc.Student" >
+			<property name="rollno" value="1"></property>
+			<property name="name" value="Gopal"></property>
+			<property name="addr" value="Nanded"></property>
+			<property name="Batch" ref="b"></property>
+			
+			
+			</bean>
+			
+			</beans>
